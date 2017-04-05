@@ -1,0 +1,6 @@
+<h1>Beer List:</h1>
+<% @beers.each do |beer| %>
+  <h3><%= beer["name"] %></h3>
+  <h4><%= beer["style"] %></h4>
+  <p><%= beer["alcohol_content"] %></p>
+<% end %>
