@@ -2,3 +2,10 @@
 <h3><%= @beer["name"] %></h3>
 <p><%= @beer["style"] %></p>
 <p><%= @beer["alcohol_content"] %></p>
+<a href="/beers/<%= @beer["id"] %>/edit">Edit</a>
+<%= form_tag "/beers/#{@beer['id']}", method: :delete do %>
+  <input type="submit" value="delete">
+<% end %>
+<a href="/beers">Back to Beers</a>
+
+

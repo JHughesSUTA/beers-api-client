@@ -1,0 +1,13 @@
+<h1>Edit Beer!</h1>
+<%= form_tag "/beers/#{@beer['id']}", method: :patch do %>
+  <div>
+    Name: <input type="text" name="form_name", value=<%= @beer["name"] %>>
+  </div>
+  <div>
+    Style: <input type="text" name="form_style" value=<%= @beer["style"] %>>
+  </div>
+  <div>
+    Alcohol: <input type="text" name="form_alcohol" value=<%= @beer["alcohol"] %>>
+  </div>
+  <input type="submit" value="Submit">
+<% end %>

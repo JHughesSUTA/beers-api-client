@@ -1,0 +1,13 @@
+<h1>New Beer!</h1>
+<%= form_tag "/beers", method: :post do %>
+  <div>
+    Name: <input type="text" name="form_name">
+  </div>
+  <div>
+    Style: <input type="text" name="form_style">
+  </div>
+  <div>
+    Alcohol: <input type="text" name="form_alcohol">
+  </div>
+  <input type="submit" value="Add">
+<% end %>
